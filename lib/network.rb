@@ -1,19 +1,20 @@
 class Network
 
-attr_reader :name,
-            :shows
+  attr_reader :name,
+              :shows
 
-def initialize(name, shows = [] )
-  @name = name
-  @shows = shows
+  def initialize(name, shows = [] )
+    @name = name
+    @shows = shows
 
-end
+  end
 
-def add_show(show)
-  shows.push(show)
-end
+  def add_show(show)
+    shows.push(show)
+  end
 
-
-
+  def payroll
+    
+  end
 
 end
