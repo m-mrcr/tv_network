@@ -20,12 +20,12 @@ class NetworkTest < Minitest::Test
 
   def test_it_can_add_and_display_shows
     nbc = Network.new("NBC")
-      knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, kitt])
-        kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
-        michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
-      parks_and_rec = Show.new("Parks and Recreation", "Michael Shur & Greg Daniels", [leslie_knope, ron_swanson])
-        leslie_knope = Character.new({name: "Leslie Knope", actor: "Amy Poehler", salary: 2_000_000})
-        ron_swanson = Character.new({name: "Ron Swanson", actor: "Nick Offerman", salary: 1_400_000})
+    kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1000000})
+      michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
+    knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, kitt])
+      leslie_knope = Character.new({name: "Leslie Knope", actor: "Amy Poehler", salary: 2_000_000})
+      ron_swanson = Character.new({name: "Ron Swanson", actor: "Nick Offerman", salary: 1_400_000})
+    parks_and_rec = Show.new("Parks and Recreation", "Michael Shur & Greg Daniels", [leslie_knope, ron_swanson])
 
     network.add_show(knight_rider)
     network.add_show(parks_and_rec)
@@ -36,12 +36,12 @@ class NetworkTest < Minitest::Test
   def test_showing_who_is_highest_paid_actor
     skip
     nbc = Network.new("NBC")
-      knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, kitt])
-        kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
-        michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
-      parks_and_rec = Show.new("Parks and Recreation", "Michael Shur & Greg Daniels", [leslie_knope, ron_swanson])
-        leslie_knope = Character.new({name: "Leslie Knope", actor: "Amy Poehler", salary: 2_000_000})
-        ron_swanson = Character.new({name: "Ron Swanson", actor: "Nick Offerman", salary: 1_400_000})
+      kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1000000})
+      michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
+    knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, kitt])
+      leslie_knope = Character.new({name: "Leslie Knope", actor: "Amy Poehler", salary: 2_000_000})
+      ron_swanson = Character.new({name: "Ron Swanson", actor: "Nick Offerman", salary: 1_400_000})
+    parks_and_rec = Show.new("Parks and Recreation", "Michael Shur & Greg Daniels", [leslie_knope, ron_swanson])
 
     network.add_show(knight_rider)
     network.add_show(parks_and_rec)
@@ -52,12 +52,12 @@ class NetworkTest < Minitest::Test
   def test_that_it_can_show_payroll
     skip
     nbc = Network.new("NBC")
-      knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, kitt])
-        kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
-        michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
-      parks_and_rec = Show.new("Parks and Recreation", "Michael Shur & Greg Daniels", [leslie_knope, ron_swanson])
-        leslie_knope = Character.new({name: "Leslie Knope", actor: "Amy Poehler", salary: 2_000_000})
-        ron_swanson = Character.new({name: "Ron Swanson", actor: "Nick Offerman", salary: 1_400_000})
+      kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1000000})
+      michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
+    knight_rider = Show.new("Knight Rider", "Glen Larson", [michael_knight, kitt])
+      leslie_knope = Character.new({name: "Leslie Knope", actor: "Amy Poehler", salary: 2_000_000})
+      ron_swanson = Character.new({name: "Ron Swanson", actor: "Nick Offerman", salary: 1_400_000})
+    parks_and_rec = Show.new("Parks and Recreation", "Michael Shur & Greg Daniels", [leslie_knope, ron_swanson])
 
     network.add_show(knight_rider)
     network.add_show(parks_and_rec)
