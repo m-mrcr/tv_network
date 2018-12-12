@@ -1,9 +1,10 @@
+require './lib/character'
+
 class Show
 
   attr_reader :name,
               :creator,
-              :characters,
-              :total_salary
+              :characters
 
   def initialize(name, creator, characters = [])
     @name = name
@@ -11,12 +12,14 @@ class Show
     @characters = characters
   end
 
+  # def total_salary
+  #   characters.inject({}) do |name, salary|
+  #
+  #   end #end for the enumerable
+  # end #end for the method
+
   def total_salary
-    @characters.sum do |character|
-      @character.salary
-    end
-
+    characters.Character.:salary.sum
   end
-
 
 end
